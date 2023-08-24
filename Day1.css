@@ -1,0 +1,71 @@
+/*element or Typeselector*/
+p{
+    color: green;
+}
+li{
+    list-style-type: square;
+}
+/*class selector*/
+.special{
+    color: aliceblue;
+    font-weight: bold;
+
+}
+span.special,li.special{
+color: orange;
+font-weight: bold;
+}
+/*child combinator*/
+a>p{
+    color: aqua;
+}
+/**descendant combinator or selector*/
+li em{
+    color: rebeccapurple;
+}
+/*adjacent selector*/
+h1+p{
+    font-size: 200%;
+}
+/*general sibling combinator*/
+h1~p{
+    color: blueviolet;
+}
+/*pseudo class selector*/
+a:hover{
+    color: blue;
+    text-decoration: none;
+}
+/*pseudo Element selector*/
+p::after{
+    color: blue;
+}
+/**All selectors together*/
+body h1+p .special{
+    color: brown;
+    background-color: black;
+    padding: 10px; ;
+}
+/*id selector*/
+#heading{
+    color: rebeccapurple;
+    background-color: black;
+}
+p#one{
+    color: beige;
+
+}
+/*Attribute Selector*/
+li[class]{
+    color: blue;
+    font-size: large;
+}
+li[class="a"]{
+    color: aliceblue;
+    font-size: medium;
+}
+/*for everything selectoror Universal selector*/
+*{
+    color: darkgoldenrod;
+    font-size: smaller;
+}

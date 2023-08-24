@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="specificity.css">
+    <title>Specificity</title>
+    <style>
+         ul#summerdrinks li .favorite{
+            color: blue;
+            font-weight: bold;
+        }
+        ul#summerdrinks li{
+            color: black;
+            font-size: large;
+            font-weight: normal;
+        }
+        /*Here specificity is like associativity and the if 
+        associativity is same then we go according to the order which one 
+        is last typed got executed*/
+    </style>
+</head>
+<body>
+    <ul id="summerdrinks">
+        <li>MountainDew</li>
+        <li>Maaza</li>
+        <li class="favorite">Pepse</li>
+        <li>Cocacola</li>
+    </ul>
+    
+</body>
+</html>
